@@ -1,0 +1,91 @@
+/* variables */
+:root {
+    --main-color: #212529;
+    --socendry-color:#223c41;
+}
+/* variables */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "work-sans", sans-serif;
+}
+/* start header section */
+.container {
+    max-width: 1300px; 
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container .header {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+}
+.container .header .logo {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+}
+.container .header .logo i {
+    color:var(--main-color);
+    font-size: 40px;
+}
+.container .header .logo p {
+    color: var(--socendry-color) ;
+    font-size: 30px;
+    margin: 0;
+    padding-left: 15px;
+}
+/* end header section */
+/* start Login section */
+.login-card  {
+    position: absolute;
+    width: 450px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login-card form {
+    border:1px solid #00000020;
+    border-radius: 5px;
+}
+.login-card form .card-header {
+    border-bottom: solid 1px #00000020;
+    text-align: center;
+    padding: 10px;
+    background-color: #00000008;
+}
+.login-card form .card-header .logo i {
+    color: var(--main-color);
+    font-size: 90px;
+}
+.login-card form .card-header .logo p {
+    font-size: 35px;
+    text-align: center;
+    margin: 5px 0;
+    color: var(--socendry-color);
+}
+.login-card form .card-body {
+    padding: 0px 15px ;
+}
+.login-card form .card-body p {
+    margin-bottom: 6px;
+    color:var(--socendry-color) ;
+}
+.login-card form .card-body input {
+    width: 100%;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: var(--socendry-color);
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.login-card form .card-body .button {
+    margin: 20px 0 ;
+    width: 100px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* end Login section */

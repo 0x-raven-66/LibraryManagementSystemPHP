@@ -1,0 +1,43 @@
+:root {
+    --main-color: #212529;
+    --secondery-color: #ffffffbf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    display: inline-block;
+    margin: 120px 0 30px 30px;
+    color: var(--main-color);
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.dash {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97vw;
+    height: 65vh;
+    margin: auto;
+}
+.dash div {
+    width: 28%;
+    height: 40%;
+    margin: 15px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--secondery-color);
+    padding: 20px;
+    border-radius: 10px ;
+}
+.dash div h3 {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+.dash div p {
+    font-size: 2em;
+}

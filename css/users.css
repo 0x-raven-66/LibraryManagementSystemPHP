@@ -1,0 +1,206 @@
+:root {
+    --main-color: #212529;
+    --secondery-color: #ffffffbf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pop-up-form {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000075;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100%;
+    transition: top 300ms;
+}
+
+.users-form {
+    border-radius: 4px;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: var(--secondery-color);
+    width: 26vw;
+}
+
+.users-form input {
+    padding: 6px 10px;
+    margin: 5px auto;
+    background-color: var(--secondery-color);
+    font-size: 17px;
+    border: 1px solid var(--main-color);
+    width: 100%;
+    border-radius: 3px;
+}
+
+#close-btn {
+    color: var(--secondery-color);
+    background-color: transparent;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    border: 1px solid var(--secondery-color);
+    border-radius: 3px;
+    padding: 0px 4px;
+    font-size: 20px;
+    height: 24px;
+}
+
+#in-add-btn {
+    background-color: var(--secondery-color);
+    color: var(--main-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin: 13px auto 0 auto;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+}
+
+/* start edituser page */
+#edit-user {
+    background-color: var(--main-color);
+    color: var(--secondery-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin: 13px auto 0 auto;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    width: 40%;
+}
+
+.cont .users-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    height: 400px;
+}
+
+.cont .users-form form {
+    width: 100%;
+}
+
+#edit-btn {
+    background-color: var(--secondery-color);
+    color: var(--main-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin: 30px auto 0 auto;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+}
+/* end edituser page */
+
+h2 {
+    display: inline-block;
+    margin: 120px 0 30px 30px;
+    color: var(--main-color);
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.head {
+    background-color: #e9e9e9;
+}
+
+.search-add-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input,
+.search button,
+.search .by {
+    padding: 6px 10px;
+    margin: 10px 0 10px 15px;
+    background: #ffffffab;
+    font-size: 17px;
+    border: 1px solid #212529;
+    height: 100%;
+}
+
+.search button {
+    cursor: pointer;
+    margin: 10px -5px;
+    background-color: var(--main-color);
+    color: var(--secondery-color);
+}
+
+.add button {
+    background-color: var(--main-color);
+    color: var(--secondery-color);
+    cursor: pointer;
+    padding: 6px 10px;
+    margin: 10px;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+.content {
+    display: block;
+    border: 1px solid #ddd;
+    width: 95vw;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+tr {
+    height: 45px;
+}
+th {
+    text-transform: capitalize;
+    padding: 15px;
+    text-align: center
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr .edit,
+tr .delete {
+    margin: 0 7px;
+    border: none;
+    cursor: pointer;
+}
+
+tr .edit {
+    color: green;
+}
+
+tr .delete {
+    color: red;
+}
